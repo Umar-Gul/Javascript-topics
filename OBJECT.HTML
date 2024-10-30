@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Objects in Javascript</h1>
+
+    <script>
+
+        // const mySym = Symbol(key1)
+
+        const myInfo = {
+                name : "Umar Gul",
+                address: "Peshawar",
+                age: 23,
+                Email: "gumar4852@gmail.com",
+                // [mySym]: "key2",
+                isloggedIn: "true",
+                fullName: {
+                    userName: {
+                        firstName: "Khan",
+                        lastName: "Gull"
+                    }
+                }
+        }
+
+        console.log(myInfo["location"]);
+        
+        myInfo.name = "Hifshan Gull"
+        console.log(myInfo);
+
+        Object.freeze(myInfo)
+
+        myInfo.greety = function() {
+            console.log("This is a new function");
+        }
+
+        console.log(myInfo.greety);
+
+
+    </script>
+</body>
+</html>

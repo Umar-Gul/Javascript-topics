@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <h1>Array in Javascript</h1>
+
+    <script>
+
+        const array = [1, 2, 3, 4, 5, 6, 7]
+        const arr = [8, 9]
+        console.log(array);
+        console.log(array.push(8));
+        console.log(array.pop());
+        console.log(array.shift());
+        console.log(array.unshift(7));
+        console.log(array.concat(arr));
+
+
+        score1 = 300;
+        score2 = 400;
+        score3 = 500;
+        console.log(Array.of(score1, score2, score3));
+
+        const fruit = []
+        fruit.push("banana", "mango", "apple")
+        fruit.pop("mango")
+        console.log(fruit);
+        console.log(Object.keys(fruit));
+
+
+        const board = [
+            ["R", "N", "B", "Q", "K", "B", "N", "R"],
+            ["P", "P", "P", "P", "P", "P", "P", "P"],
+            [" ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " "],
+            [" ", " ", " ", " ", " ", " ", " ", " "],
+            ["p", "p", "p", "p", "p", "p", "p", "p"],
+            ["r", "n", "b", "q", "k", "b", "n", "r"],
+        ];
+
+        console.log(`${board.join("\n")}\n\n`);
+
+        // Move King's Pawn forward 2
+        board[4][4] = board[6][4];
+        board[6][4] = " ";
+        console.log(board.join("\n"));
+
+
+        function testArray(effect) {
+            const arr = ["Umar", "Ali", "Usman", "Haider"]
+            arr.forEach((elem, index, arr) => {
+                console.log(`$[${arr.join(",")}], index : ${index}, elements : ${elem}`);
+
+            })
+            console.log(`Final array are : [${arr.join(",")}]`);
+        }
+
+        testArray()
+
+
+
+
+        const fruits = ["Apple", "Banana", "Strawberry", "Mango", "Cherry"];
+        const start = 2;
+        const removedItems = fruits.splice(start);
+        console.log(fruits);
+        // ["Apple", "Banana"]
+        console.log(removedItems);
+        // ["Strawberry", "Mango", "Cherry"]
+
+
+
+        const fruity = ["Apple", "Banana", "Strawberry", "Mango", "Cherry"];
+        let star = 4;
+        const removedItem = fruity.slice(star)
+        console.log(fruity);
+        // console.log(removedItem);
+        console.log("❤");
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

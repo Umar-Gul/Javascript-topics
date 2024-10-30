@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Data type in JavaScript</h1>
+    <script>
+         
+         let name = "Umar Gul"
+         let age = 23
+         console.log(name, age);
+         console.log(typeof name);
+         console.log(typeof age);
+
+         console.log("premative databtypes");
+         console.log("string, number, boolean, null, undefine, BigInt are store in memory in stack form");
+         console.log("Array, Object, Function");
+
+         let friends = [`Umar, Ali, Usman, Hamza`]
+         console.log(friends);
+
+         let myInfo = {
+           myname : "Umar Gul",
+           address : "Peshawar",
+           contact : 3222323
+
+         }
+         console.log(myInfo);
+
+         let a = 12;
+
+        function compare() {
+            if(a == 10){
+                console.log("got it");
+                return true
+            }
+            else {
+                
+                
+                console.log("wrong values");
+                return false
+            }
+        }
+        compare()
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+
+<body>
+    <script>
+        let firstName = "Umar";
+        let lastName = " Gul";
+        let fullName = "Umar Gul Khan";
+        console.log(firstName + lastName);
+        console.log(`My first name is ${firstName} and my last name is ${lastName} and my full name is ${fullName}`) ;
+
+        console.log(fullName);
+        console.log(fullName.indexOf(`K`));
+        console.log(fullName.charAt(9));
+        // console.log(fullName.toUpperCase());
+        console.log(fullName.toLowerCase());
+
+        const newString = fullName.substring(9, 13)
+        console.log(newString);
+
+        const anatherString = fullName.slice(-8,13)
+        console.log(anatherString);
+
+        const anotherName = "Umar gul Meer";
+        console.log(anotherName);
+        console.log(anotherName.trim());
+        console.log(anotherName.replace(`U`, `O`));
+        console.log(anotherName.includes(`Meer`));
+        console.log(anotherName.split(`    `));
+
+        const alphabits = "abcdefghijklmnopqrstuvwxyz" ;
+        console.log(alphabits.length);
+        console.log(alphabits.indexOf("mno"));
+        console.log(alphabits.lastIndexOf("lmn"));
+        console.log(alphabits.slice(3, 6));
+        console.log(alphabits.replace(`abc`,`123`));
+        console.log(alphabits.length);
+        console.log(alphabits.concat(" ", "str2"));
+        console.log(alphabits.charCodeAt(2));
+        console.log(alphabits.split(","));
+        console.log(alphabits.toString(20));
+
+
+    </script>
+</body>
+
+</html>

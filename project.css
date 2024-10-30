@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0%;
+    display: block;
+
+}
+
+.quote-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: gainsboro;
+    border: 1px solid black;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid block;
+}
